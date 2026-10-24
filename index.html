@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saydullayev Ulug'bek | Portfolio</title>
+    <script>
+        document.documentElement.dataset.theme = localStorage.getItem('theme') || 'dark';
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -27,16 +30,20 @@
                     <li><a href="#about">Men Haqimda</a></li>
                     <li><a href="#hobbies">Qiziqishlarim</a></li>
                     <li><a href="#family">Oilam</a></li>
+                    <li><a href="#teacher">Ustozim</a></li>
                     <li><a href="#friends">Do'stlarim</a></li>
                     <li><a href="#projects">Erishgan Yutuqlarim</a></li>
                 </ul>
             </nav>
 
             <div class="nav-actions">
-                <button class="theme-btn">
-                    <img src="./images/SVG.png" alt="Rejim">
+                <button class="theme-btn" id="themeBtn">
+                    <img src="./images/dark_mode_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.png" alt="Rejim">
                 </button>
-                <button class="btn btn-primary">Menga Bog'lanish</button>
+                <div class="nav-actions">
+
+                    <a href="#contact" class="btn btn-primary">Menga Bog'lanish</a>
+                </div>
             </div>
         </div>
     </header>
@@ -45,7 +52,7 @@
         <section class="hero" id="about">
             <div class="container hero-grid">
                 <div class="photo-card">
-                    <img class="photo" src="./" alt="Saydullayev Ulug'bek" width="414" height="496">
+                    <img class="photo" src="./images/mem.jpg" alt="" width="414" height="496">
                     <div class="photo-info">
                         <div>
                             <strong>Saydullayev</strong>
@@ -72,14 +79,14 @@
                         bag'ishlaydi.
                     </p>
                     <div class="hero-buttons">
-                        <button class="btn btn-primary">
+                        <a href="#contact" class="btn btn-primary">
                             <img src="./images/SVG%20(1).png" alt="">
                             Menga Bog'lanish
-                        </button>
-                        <button class="btn btn-secondary">
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
                             <img src="./images/SVG%20(2).png" alt="">
                             Yutuqlarimni Ko'rish
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -124,7 +131,7 @@
 
                     <div class="interest-item">
                         <img src="./images/overlay2.png" alt="">
-                        <h3>Mantiqiy Topishmoqlar  Algoritmlar</h3>
+                        <h3>Mantiqiy Topishmoqlar Algoritmlar</h3>
                         <p>Murakkab boshqotirmalarni tahlil qilish, shaxmat, mantiqiy masalalar yechish orqali analitik
                             fikrlashni yuksaltirish.</p>
                     </div>
@@ -138,21 +145,21 @@
 
                     <div class="interest-item">
                         <img src="./images/overlay4.png" alt="">
-                        <h3>IT Adabiyotlari  Mutolaa</h3>
+                        <h3>IT Adabiyotlari Mutolaa</h3>
                         <p>Dasturlash arxitekturasi, toza kod tamoyillari hamda dunyo texnologiya sohasidagi eng so'nggi
                             yangiliklarni mutolaa qilish.</p>
                     </div>
 
                     <div class="interest-item">
                         <img src="./images/overlay5.png" alt="">
-                        <h3>Jamoaviy Hamkorlik  Hackathonlar</h3>
+                        <h3>Jamoaviy Hamkorlik Hackathonlar</h3>
                         <p>Tengdosh dasturchilar bilan fikr almashish, ochiq kodli loyihalarda qatnashish va birgalikda
                             tajriba to'plash.</p>
                     </div>
 
                     <div class="interest-item">
                         <img src="./images/overlay6.png" alt="">
-                        <h3>Innovatsiyalar  Sun'iy Intellekt</h3>
+                        <h3>Innovatsiyalar Sun'iy Intellekt</h3>
                         <p>Dasturchilar samaradorligini oshiruvchi zamonaviy sun'iy intellekt vositalari va
                             avtomatlashtirish texnologiyalarini o'rganish.</p>
                     </div>
@@ -201,7 +208,288 @@
                 </div>
             </div>
         </section>
+        <section class="teach" id="teacher">
+            <div class="container">
+                <div class="teach-card">
+                    <div class="teach-photo">
+                        <img src="./images/ustoz.jpg" alt="Asilbek Xoliyorov">
+                    </div>
+
+                    <div class="teach-info">
+                        <span class="teach-tag">Bilim bergan inson</span>
+                        <h2 class="teach-title">Mening Ustozim</h2>
+                        <h3 class="teach-name">Asilbek Xoliyorov</h3>
+                        <span class="teach-role">Dasturlash ustozi</span>
+
+                        <p class="teach-quote">
+                            Ustoz bergan bilim — umrbod boylik. Har bir yozgan qatorim ortida sizning sabringiz,
+                            ishonchingiz va to'g'ri yo'l ko'rsatganingiz turibdi. Menga nafaqat kod yozishni,
+                            balki muammoga sovuqqon va mantiqiy qarashni ham o'rgatganingiz uchun chin dildan
+                            minnatdorman.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="buddy" id="friends">
+            <div class="container">
+                <span class="buddy-tag">Sadoqatli hamrohlarim</span>
+                <h2 class="buddy-title">Eng Yaqin Do'stlarim</h2>
+                <p class="buddy-text">
+                    Bolaligimdan birga o'sgan, har qanday vaziyatda bir-birimizni qo'llab-quvvatlaydigan va hayotimda
+                    alohida o'rin tutadigan eng yaqin do'stlarim.
+                </p>
+
+                <div class="buddy-list">
+                    <article class="buddy-card" tabindex="0">
+                        <div class="buddy-inner">
+                            <div class="buddy-front">
+                                <div class="buddy-photo">
+                                    <img src="./images/behruz.jpg" alt="Botirov Bexruz" width="355" height="337">
+                                </div>
+                                <h3>Botirov Bexruz</h3>
+                                <span class="buddy-link">Qiziqarli xotirani ko'rish uchun bosing</span>
+                            </div>
+                            <div class="buddy-back">
+                                <p>Har doim ishonchli va mas'uliyatli do'st. Sport bilan shug'ullanadi, og'ir-bosiq va
+                                    kerakli vaqtda yordam berishga tayyor.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="buddy-card" tabindex="0">
+                        <div class="buddy-inner">
+                            <div class="buddy-front">
+                                <div class="buddy-photo">
+                                    <img src="./images/shag'zot.jpg" alt="Botaboyev Shag'zod" width="355" height="337">
+                                </div>
+                                <h3>Botabayev Shag'zod</h3>
+                                <span class="buddy-link">Qiziqarli xotirani ko'rish uchun bosing</span>
+                            </div>
+                            <div class="buddy-back">
+                                <p>Samimiy, hazilkash va hayotga erkin qaraydigan do'stlarimdan biri. U bilan har kuni
+                                    darslar va kunimiz ko'tarinki ruhda o'tadi.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="container mates">
+            <h3 class="mates-title">IT yo'limdagi hamfikr do'stlarim</h3>
+            <p class="mates-text">
+                Birga dars qilgan, bir-birimizga kod ko'rsatib, xatolarimizni birga topgan yo'ldoshlarim.
+                Ular bilan har bir mashq va har bir loyiha quvonchli bo'ladi, qiyin masalalar esa birgalikda oson
+                yechiladi.
+            </p>
+
+            <div class="mates-grid">
+                <article class="mate">
+                    <div class="mate-photo"><img src="./images/dost1.jpg" alt="Ism Familiya"></div>
+                    <h4>Nasimbek</h4>
+                </article>
+                <article class="mate">
+                    <div class="mate-photo"><img src="./images/dost2.jpg" alt="Ism Familiya"></div>
+                    <h4>Amirxan</h4>
+                </article>
+                <article class="mate">
+                    <div class="mate-photo"><img src="./images/dost3.jpg" alt="Ism Familiya"></div>
+                    <h4>Jahongir</h4>
+                </article>
+                <article class="mate">
+                    <div class="mate-photo"><img src="./images/dost4.jpg" alt="Ism Familiya"></div>
+                    <h4>Begzod</h4>
+                </article>
+                <article class="mate">
+                    <div class="mate-photo"><img src="./images/dost5.jpg" alt="Ism Familiya"></div>
+                    <h4>Botirxon</h4>
+                </article>
+                <article class="mate">
+                    <div class="mate-photo"><img src="./images/dost6.jpg" alt="Ism Familiya"></div>
+                    <h4>Afruz</h4>
+                </article>
+                <article class="mate">
+                    <div class="mate-photo"><img src="./images/dost7.jpg" alt="Ism Familiya"></div>
+                    <h4>Ibrohim</h4>
+                </article>
+                <article class="mate">
+                    <div class="mate-photo"><img src="./images/dost8.jpg" alt="Ism Familiya"></div>
+                    <h4>Davron</h4>
+                </article>
+                <article class="mate">
+                    <div class="mate-photo"><img src="./images/dost9.jpg" alt="Ism Familiya"></div>
+                    <h4>Amirbek</h4>
+                </article>
+                <article class="mate">
+                    <div class="mate-photo"><img src="./images/dost10.jpg" alt="Ism Familiya"></div>
+                    <h4>Ism Familiya</h4>
+                </article>
+                <article class="mate">
+                    <div class="mate-photo"><img src="./images/dost11.jpg" alt="Ism Familiya"></div>
+                    <h4>Ism Familiya</h4>
+                </article>
+                <article class="mate">
+                    <div class="mate-photo"><img src="./images/dost12.jpg" alt="Ism Familiya"></div>
+                    <h4>Ism Familiya</h4>
+                </article>
+            </div>
+        </div>
+        <section class="goal" id="projects">
+            <div class="container">
+                <span class="goal-tag">Rivojlanish yo'li</span>
+                <h2 class="goal-title">Erishgan Yutuqlarim</h2>
+                <p class="goal-text">
+                    Katta maqsadlar sari har kuni qo'yilgan kichik va qat'iy qadamlar orqali quyidagi dastlabki
+                    marralarni zabt etdim.
+                </p>
+
+                <div class="goal-list">
+                    <div class="goal-row">
+                        <span class="goal-num">01</span>
+                        <div class="goal-body">
+                            <h3>HTML5 Semantik Veb Standartlari</h3>
+                            <p>Veb-sahifalarning mustahkam poydevorini to'g'ri, semantik teglardan foydalangan holda
+                                qat'iy standartlar asosida qurishni to'liq o'zlashtirish.</p>
+                        </div>
+                        <span class="goal-level">Dastlabki Bosqich</span>
+                    </div>
+
+                    <div class="goal-row">
+                        <span class="goal-num">02</span>
+                        <div class="goal-body">
+                            <h3>CSS3, Flexbox Responsive Grid Dizayn</h3>
+                            <p>Smartfonlar, planshetlar va katta monitorlar uchun to'liq moslashuvchan (mobile-friendly)
+                                zamonaviy dizayn uslublarini ishlab chiqish.</p>
+                        </div>
+                        <span class="goal-level">Mustaqil Mashqlar</span>
+                    </div>
+
+                    <div class="goal-row">
+                        <span class="goal-num">03</span>
+                        <div class="goal-body">
+                            <h3>Git GitHub Tizimida Kod Boshqaruvi</h3>
+                            <p>Versiyalar nazorati tizimi orqali kodlarni toza saqlash, commitlar tarixi bilan ishlash
+                                va loyihalarni onlayn platformalarga joylash.</p>
+                        </div>
+                        <span class="goal-level">Versiyalar Nazorati</span>
+                    </div>
+
+                    <div class="goal-row">
+                        <span class="goal-num">04</span>
+                        <div class="goal-body">
+                            <h3>JavaScript Dinamikasi React Ekotizimi</h3>
+                            <p>Foydalanuvchi hodisalari (events), dinamik ma'lumotlar bilan ishlash, React komponentlari
+                                va Tailwind CSS orqali haqiqiy portfolio yaratish.</p>
+                        </div>
+                        <span class="goal-level">Hozirgi Bosqich</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cont" id="contact">
+            <div class="container cont-grid">
+                <div class="cont-left">
+                    <span class="cont-tag">Aloqa va hamkorlik</span>
+                    <h2 class="cont-title">Menga Bog'lanish</h2>
+                    <p class="cont-text">
+                        Agar sizda yangi takliflar, fikr-mulohazalar yoki birgalikda foydali loyihalar yaratish istagi
+                        bo'lsa, men har doim suhbat uchun ochiqman. Menga xabar yuboring, imkon qadar tezroq javob
+                        beraman!
+                    </p>
+
+                    <div class="cont-info">
+                        <div class="cont-item">
+                            <span class="cont-icon"><img src="./images/SVG%20(3).png" alt=""></span>
+                            <div>
+                                <small>Telefon raqam</small>
+                                <strong>+998 93 893 30 80</strong>
+                            </div>
+                        </div>
+
+                        <div class="cont-item">
+                            <span class="cont-icon"><img src="./images/SVG%20(4).png" alt=""></span>
+                            <div>
+                                <small>Elektron pochta</small>
+                                <strong>usaydullaev727@gmail.com</strong>
+                            </div>
+                        </div>
+
+                        <div class="cont-item">
+                            <span class="cont-icon"><img src="./images/SVG%20(5).png" alt=""></span>
+                            <div>
+                                <small>Yashash manzili</small>
+                                <strong>Toshkent viloyati, O'zbekiston</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="cont-form">
+                    <div class="cont-two">
+                        <label>Ismingiz
+                            <input type="text" placeholder="Ismingizni kiriting:" required>
+                        </label>
+                        <label>Familiyangiz
+                            <input type="text" placeholder="Familiyangizni kiriting">
+                        </label>
+                    </div>
+
+                    <label>Elektron pochta manzili
+                        <input type="email" placeholder="namuna@domain.uz" required>
+                    </label>
+
+                    <label>Xabar matni
+                        <textarea rows="4" placeholder="Xabaringiz yoki taklifingizni shu yerda qoldiring..."
+                            required></textarea>
+                    </label>
+
+                    <button type="submit" class="btn btn-primary">
+                        <img src="./images/SVG%20(1).png" alt="">
+                        Xabarni Yuborish
+                    </button>
+                </form>
+            </div>
+        </section>
+        <footer class="foot">
+            <div class="container">
+                <div class="foot-top">
+                    <div class="foot-brand">
+                        <span class="foot-logo"><img src="./images/Background.png" alt="US logo"></span>
+                        <div>
+                            <strong>Saydullayev Ulug'bek</strong>
+                            <small>Toza kod, tinimsiz izlanish va yuksak maqsadlar sari</small>
+                        </div>
+                    </div>
+
+                    <div class="foot-social">
+                        <a href="https://t.me/Saydullayev20110527" target="_blank" rel="noopener"
+                            aria-label="Telegram"><img src="./images/telegram.png" alt=""></a>
+                        <a href="https://github.com/SIZNING_USERNAME" target="_blank" rel="noopener"
+                            aria-label="GitHub"><img src="./images/github.png" alt=""></a>
+                        <a href="https://instagram.com/saydullayev_u_0" target="_blank" rel="noopener"
+                            aria-label="Instagram"><img src="./images/instagram.png" alt=""></a>
+                        <a href="tel:+998938933080" aria-label="Telefon"><img src="./images/telefon.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="foot-bottom">
+                    <p>© 2026 Saydullayev Ulug'bek. Barcha huquqlar himoyalangan.</p>
+                    <p>Minimalist Responsive Portfolio · Toshkent, O'zbekiston</p>
+                </div>
+            </div>
+        </footer>
     </main>
+
+
+     <div class="lightbox" id="lightbox">
+        <img src="" alt="">
+        <p></p>
+    </div>
+
+
+    <script src="./script.js"></script>
+
 </body>
 
 </html>
